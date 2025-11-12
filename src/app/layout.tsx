@@ -5,7 +5,7 @@ import "./globals.css";
 const arefRuqaaInk = Reem_Kufi({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["500", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body className={`${arefRuqaaInk.variable} antialiased`}>{children}</body>
     </html>
   );
