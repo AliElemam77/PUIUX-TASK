@@ -3,5 +3,11 @@
 
 body {
   font-family: 'Reem kufi', sans-serif;
-  @apply bg-white ;
+  @apply bg-white;
+}
+
+@theme {
+  --color-primary: #2F4A46;
+  --color-secondary: #FAF8F5;
+  --color-accent: #BA946C;
 }
