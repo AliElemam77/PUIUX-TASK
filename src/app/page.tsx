@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
+import LastNewsSection from "@/components/sections/LastNewsSection/LastNewsSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -30,7 +31,8 @@ export default function Home() {
           <div className="goals flex"></div>
         </div>
       </div>
-
+      {/* Last news section */}
+      <LastNewsSection />
       <div className="">dsads</div>
     </div>
   );
