@@ -1,9 +1,11 @@
+import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col h-full items-center justify-center text-9xl">
       {/* Hero section */}
+
       <div className="w-full h-screen text-black bg-amber-400">sda</div>
       <div className="container mx-auto flex items-center justify-center">
         <div className="relative h-[551px] w-[551px]">
@@ -22,7 +24,7 @@ export default function Home() {
           </h1>
           <p className="text-xl text-gray-400 font-extralight">
             تنتمي أسرة آل ملحم في الأحساء إلى قبيلة مطير نسبا وتحديدا من
-            "العقفان" ويسمون (القنازعة) من الجغاوين وهو فرع من العبيات المشهور
+            العقفان ويسمون (القنازعة) من الجغاوين وهو فرع من العبيات المشهور
             والمنتمي إلى واصل من بريه أحد الأقسام الرئيسية الثلاثة لقبيلة مطير.
           </p>
           <div className="goals flex"></div>
