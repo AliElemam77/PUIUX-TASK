@@ -3,5 +3,5 @@
 
 body {
   font-family: 'Reem kufi', sans-serif;
-  @apply bg-black text-white;
+  @apply bg-white ;
 }
