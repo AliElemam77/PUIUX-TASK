@@ -5,7 +5,7 @@ import "./globals.css";
 const arefRuqaaInk = Reem_Kufi({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  weight: ["500", "400", "700"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {

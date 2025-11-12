@@ -1,35 +1,28 @@
+import SectionButton from "@/components/common/SectionButton/SectionButton";
 import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
-import LastNewsSection from "@/components/sections/LastNewsSection/LastNewsSection";
+import GoalsSection from "@/components/pageComponents/Home/GoalsSection/GoalsSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-full items-center justify-center text-9xl">
+    <div className="flex flex-col h-full items-center justify-center ">
       {/* Hero section */}
 
       <div className="w-full h-screen text-black bg-amber-400">sda</div>
-      <div className="container mx-auto flex items-center justify-center">
-        <div className="relative h-[551px] w-[551px]">
+      {/* goals  */}
+      <GoalsSection />
+      <div className="relative bg-primary w-full flex flex-col justify-center items-center py-24">
+        <SectionHeader text="احصل على خدمتك" color="text-white" />
+        <div className="absolute top-0 right-0">
           <Image
-            src="/assets/5.png"
+            src="/assets/000.svg"
             alt="الملحم"
-            fill
-            sizes="551px"
-            className="absolute object-contain"
+            width={300}
+            height={300}
+            className="object-contain"
           />
         </div>
-        <div className="content w-1/2 flex flex-col gap-9">
-          <h1 className="text-[72px] ">
-            التاريخ حاضر
-            <br /> لنشكل المستقبل
-          </h1>
-          <p className="text-xl text-gray-400 font-extralight">
-            تنتمي أسرة آل ملحم في الأحساء إلى قبيلة مطير نسبا وتحديدا من
-            العقفان ويسمون (القنازعة) من الجغاوين وهو فرع من العبيات المشهور
-            والمنتمي إلى واصل من بريه أحد الأقسام الرئيسية الثلاثة لقبيلة مطير.
-          </p>
-          <div className="goals flex"></div>
-        </div>
+        <SectionButton text="استكشف جميع الخدمات" />
       </div>
       {/* Last news section */}
       <LastNewsSection />
