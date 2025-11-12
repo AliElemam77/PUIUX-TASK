@@ -18,7 +18,9 @@ export default function LastNewsSection() {
                     <Image src="/assets/icons/HeaderShape.svg" alt="divider" fill className="mb-4 object-contain" />
                 </div>
             </div>
-            <CardSlider />
+            <div className="mt-14 lg:mt-24">
+                <CardSlider />
+            </div>
         </div>
     )
 }
