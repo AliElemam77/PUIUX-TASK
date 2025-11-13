@@ -1,6 +1,9 @@
 import SectionButton from "@/components/common/SectionButton/SectionButton";
 import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
+import ContactSections from "@/components/pageComponents/Home/ContactSections/ContactSection";
 import GoalsSection from "@/components/pageComponents/Home/GoalsSection/GoalsSection";
+import PartnerSections from "@/components/pageComponents/Home/PartnersSection/PartnerSections";
+import LastNewsSection from "@/components/sections/LastNewsSection/LastNewsSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -26,7 +29,9 @@ export default function Home() {
       </div>
       {/* Last news section */}
       <LastNewsSection />
-      <div className="">dsads</div>
+
+      <PartnerSections />
+    <ContactSections />
     </div>
   );
 }

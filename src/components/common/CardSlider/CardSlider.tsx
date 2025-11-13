@@ -4,8 +4,8 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function CardSlider() {
     const scrollRef = useRef<HTMLInputElement>(null);
-    const [isAtStart, setIsAtStart] = useState(true);
-    const [isAtEnd, setIsAtEnd] = useState(false);
+    const [isAtStart, setIsAtStart] = useState(false);
+    const [isAtEnd, setIsAtEnd] = useState(true);
     const scroll = (direction: string) => {
         if (!scrollRef.current) return;
         const { scrollLeft, clientWidth } = scrollRef.current;

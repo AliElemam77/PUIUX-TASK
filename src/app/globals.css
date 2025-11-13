@@ -13,3 +13,7 @@ body {
   --color-secondary: #FAF8F5;
   --color-accent: #BA946C;
 }
+
+.clipped-section {
+  background-image: url('/assets/ContactUs/image.png');
+}
