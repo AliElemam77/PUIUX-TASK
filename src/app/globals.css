@@ -57,3 +57,6 @@ body {
   background: bisque  !important; /* لون مميز للنقطة النشطة */
   opacity: 1;
 }
+.clipped-section {
+  background-image: url('/assets/ContactUs/image.png');
+}
