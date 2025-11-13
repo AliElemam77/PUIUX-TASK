@@ -4,7 +4,7 @@ import React from "react";
 export default function GoalsSection() {
   return (
     <>
-      <div className="relative ">
+      <div className="relative mt-40">
         <div className="absolute left-0 bottom-0 h-full">
           <Image
             src="/assets/deco-1.svg"
@@ -37,7 +37,7 @@ export default function GoalsSection() {
               style={{ wordSpacing: "5px" }}
             >
               تنتمي أسرة آل ملحم في الأحساء إلى قبيلة مطير نسبا وتحديدا من
-              "العقفان" ويسمون (القنازعة) من الجغاوين وهو فرع من العبيات المشهور
+              &quot;العقفان&quot; ويسمون (القنازعة) من الجغاوين وهو فرع من العبيات المشهور
               والمنتمي إلى واصل من بريه أحد الأقسام الرئيسية الثلاثة لقبيلة
               مطير.
             </p>

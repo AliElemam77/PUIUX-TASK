@@ -25,7 +25,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-linear-to-b from-black/99  fixed top-0 right-0 z-50 w-full h-[140px] py-4">
+    <nav className="bg-linear-to-b from-black/99  fixed top-0 right-0  w-full h-[140px] py-4 z-50">
       <div className="container mx-auto flex items-center justify-between">
         {/* 🟢 Logo */}
         <div className="logo">

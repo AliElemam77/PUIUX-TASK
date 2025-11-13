@@ -2,7 +2,7 @@ import { MdEmail, MdMessage, MdPerson, MdPhone, MdSubject } from "react-icons/md
 
 export default function ContactSections() {
     return (
-        <div className="relative overflow-x-hidden container w-full flex flex-col justify-center items-center">
+        <div className="relative overflow-x-hidden  w-full flex flex-col justify-center items-center">
 
             <div className="grid grid-cols-2 w-full container">
                 <div>
@@ -77,9 +77,7 @@ export default function ContactSections() {
                 </div>
             </div>
             <div className="w-full clipped-section bg-cover bg-no-repeat  overflow-hidden relative py-16 lg:py-24 min-h-[600px]">
-                <div>
-                    afas
-                </div>
+               
             </div>
         </div>
     )

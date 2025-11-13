@@ -60,3 +60,8 @@ body {
 .clipped-section {
   background-image: url('/assets/ContactUs/image.png');
 }
+
+/* في ملف CSS */
+.slider::-webkit-scrollbar {
+  display: none;
+}
