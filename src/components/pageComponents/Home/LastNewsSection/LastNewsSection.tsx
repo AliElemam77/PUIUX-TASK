@@ -1,8 +1,7 @@
-import CardSlider from "@/components/common/CardSlider/CardSlider";
 import SectionButton from "@/components/common/SectionButton/SectionButton";
 import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
 import Image from "next/image";
-import ServicesSwyper from "./ServicesSwyper";
+import LastNewsSwyper from "./LastNewsSwyper";
 
 export default function LastNewsSection() {
   return (
@@ -30,8 +29,9 @@ export default function LastNewsSection() {
       {/* المحتوى */}
       <div className="container mx-auto w-full flex flex-col justify-center items-center gap-20 relative z-10">
         <div className="flex flex-col items-center gap-10 w-full">
-          <SectionHeader text="احصل على خدمتك" color="text-white" />
-          <ServicesSwyper />
+          <SectionHeader text="اخر الأخبار" color="text-white" />
+
+          <LastNewsSwyper />
         </div>
 
         <SectionButton text="استكشف جميع الخدمات" />

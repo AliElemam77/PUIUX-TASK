@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ServicesCard() {
   return (
-    <div className="w-[555px] border border-accent h-fit bg-primary">
+    <div className="w-full border border-accent h-fit bg-primary">
       <div className="relative h-[393px] w-full ">
         <Image
           src="/assets/3.png"

@@ -4,8 +4,8 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function CardSlider() {
     const scrollRef = useRef<HTMLInputElement>(null);
-    const [isAtStart, setIsAtStart] = useState(true);
-    const [isAtEnd, setIsAtEnd] = useState(false);
+    const [isAtStart, setIsAtStart] = useState(false);
+    const [isAtEnd, setIsAtEnd] = useState(true);
     const scroll = (direction: string) => {
         if (!scrollRef.current) return;
         const { scrollLeft, clientWidth } = scrollRef.current;
@@ -23,7 +23,7 @@ export default function CardSlider() {
     };
 
     return (
-        <div className="relative w-screen h-screen flex items-center justify-center bg-gray-100 mt-4 mx-auto max-w-2xl">
+        <div className="relative w-screen h-screen flex items-center justify-center bg-gray-100 mt-4 mx-auto ">
             <button
                 disabled={isAtStart}
                 onClick={() => scroll("left")}
@@ -38,15 +38,14 @@ export default function CardSlider() {
             [&::-webkit-scrollbar]:w-5
   [&::-webkit-scrollbar-thumb]:bg-secondary
   [&::-webkit-scrollbar-track]:bg-accent/10 bg-primary  w-screen  snap-x snap-mandatory flex gap-10 py-10">
-                <section className="h-screen w-[400px] snap-center bg-blue-200 shrink-0 grow flex items-center justify-center text-3xl">
-                    Section 1
-                </section>
-                <section className="h-screen w-[400px] snap-center bg-green-200 shrink-0 grow flex items-center justify-center text-3xl">
-                    Section 2
-                </section>
-                <section className="h-screen w-[400px] snap-center shrink-0 grow bg-red-200 flex items-center justify-center text-3xl">
-                    Section 3
-                </section>
+              {Array.from({ length: 10 }).map((_, index) => (
+                    <div
+                        key={index}
+                        className="min-w-[300px] min-h-[200px] bg-accent rounded-lg  snap-center flex items-center justify-center text-white text-2xl font-bold"
+                    >
+                        Card {index + 1}
+                    </div>
+                ))}
             </div>
 
             <button
