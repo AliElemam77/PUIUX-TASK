@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 
+
+
 body {
   font-family: 'Reem kufi', sans-serif;
   @apply bg-white;
@@ -10,4 +12,56 @@ body {
   --color-primary: #2F4A46;
   --color-secondary: #FAF8F5;
   --color-accent: #BA946C;
+}
+
+
+
+/* تخصيص أزرار السلايدر */
+.swiper-button-next
+ {
+  color: #fff !important ;
+  
+  background-color: gray ;
+  padding: 1.2rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev {
+  color: #fff !important ;
+  background-color: #BA946C ;
+  padding: 1.2rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #fff;
+  color: #1d4ed8; /* لو عايز لون معين */
+}
+
+
+
+/* تخصيص النقاط */
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  height: 10px !important;
+  background: bisque  !important; /* لون مميز للنقطة النشطة */
+  opacity: 1;
+}
+.clipped-section {
+  background-image: url('/assets/ContactUs/image.png');
+}
+
+/* في ملف CSS */
+.slider::-webkit-scrollbar {
+  display: none;
 }
